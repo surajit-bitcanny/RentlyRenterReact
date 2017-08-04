@@ -13,10 +13,10 @@ class BackgroundImage extends Component {
         )
     }
 }
-BackgroundImage.propTypes = {
+/*BackgroundImage.propTypes = {
     //source: React.PropTypes.object,
     children: React.PropTypes.object,
     style: React.PropTypes.object
-}
+}*/
 
 export default BackgroundImage

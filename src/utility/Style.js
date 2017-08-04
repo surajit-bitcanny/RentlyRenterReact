@@ -2,6 +2,9 @@ import { StyleSheet } from 'react-native';
 
 import Color from './Color'
 
+const Dimensions = require('Dimensions');
+const window = Dimensions.get('window');
+
 var Style = StyleSheet.create({
 
     backgroundImage: {

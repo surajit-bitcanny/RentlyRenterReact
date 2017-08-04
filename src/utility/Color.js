@@ -1,4 +1,4 @@
-var Color = {
+const Color = {
     "primaryColor": '#f06e32',
     "primaryColorDark": '#c23d00',
     "colorAccent": '#c23d00',

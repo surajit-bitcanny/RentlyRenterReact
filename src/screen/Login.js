@@ -18,16 +18,15 @@ import EditText from '../component/EditText'
 import Snackbar from 'react-native-snackbar';
 import ImageView from '../component/ImageView'
 import CustomButton from '../component/CustomButton'
-import { StackNavigator } from 'react-navigation';
 
-import LoginModel from "../model/Login"
+//import LoginModel from "../model/Login"
 import Preference from "../utility/Preference"
 
-class Login extends Component{
+export default class Login extends Component{
 
     static navigationOptions = {
         title: 'Login',
-        headerTintColor: Color.primaryColor
+        //headerTintColor: Color.primaryColor
     };
 
     constructor(props){
@@ -79,7 +78,7 @@ class Login extends Component{
 
                 <View style={styles.root}>
 
-                    <ImageView source={require('../img/icon_three.png')}
+                    <ImageView source={require('../img/logo.png')}
                                style={styles.rentlyIcon}
                                resizeMode="contain"
                                onPress={this.onPressIcon.bind(this)}
@@ -150,11 +149,11 @@ class Login extends Component{
         //this.props.navigation.navigate('SelectHome')
         //console.log(Object.keys(this.props.navigation));
 
-        let api = new LoginModel();
+        /*let api = new LoginModel();
         api.login("surajit@bitcanny.com","aaaaaaaa",(error,response)=>{
             console.log(response)
             Preference.setItem(Preference.KEY_ACCESS_TOKEN,response.access_token);
-        });
+        });*/
     }
 
     handleLoginResponse(response){
@@ -223,5 +222,3 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     }
 });
-
-export default Login
