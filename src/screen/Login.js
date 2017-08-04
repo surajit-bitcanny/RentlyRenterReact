@@ -25,7 +25,7 @@ import Preference from "../utility/Preference"
 export default class Login extends Component{
 
     static navigationOptions = {
-        title: 'Login',
+        title: 'Loginn',
         //headerTintColor: Color.primaryColor
     };
 
